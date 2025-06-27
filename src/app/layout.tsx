@@ -23,8 +23,8 @@ const didactGothic = Didact_Gothic({
 });
 
 export const metadata: Metadata = {
-  title: "Dr. Chris Hengler",
-  description: "Dr. Chris Hengler's personal website",
+  title: "Chris Hengler",
+  description: "Chris Hengler's personal website",
 };
 
 export default function RootLayout({
@@ -41,7 +41,7 @@ export default function RootLayout({
             <Box sx={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
               <Header />
               <Box sx={{ flexGrow: 1, display: "flex", justifyContent: "center", mt: 3 }}>
-                <Box sx={{ p: 3, width: "70%", maxWidth: "1000px" }}>
+                <Box sx={{ p: 3, width: "60%", maxWidth: "1000px" }}>
                   {children}
                 </Box>
               </Box>

@@ -13,10 +13,9 @@ export default function HomePage() {
             </Typography>
 
             <Typography variant="body1">
-                I'm a software developer. For more on my professional work, check out my 
-                <Link href="/developer">developer</Link> page. I also do some programming in a non-professional
-                capacity, including occasionally making small games as 
-                <Link href="https://cunninghound.itch.io">Cunning Hound</Link>.
+                I'm a software developer. For more on my professional work, take a look at
+                my <Link href="/developer">developer</Link> page. I also do some programming in a non-professional
+                capacity, including occasionally making small games as <Link href="https://cunninghound.itch.io">Cunning Hound</Link>.
             </Typography>
 
             <Typography variant="body1">

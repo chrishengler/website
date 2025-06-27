@@ -42,10 +42,8 @@ const theme = createTheme({
         MuiTypography: {
             styleOverrides: {
                 root: {
-                    // Ensure links inside Typography are underlined
                     '& a': {
                         textDecoration: 'underline',
-                        // textUnderlineOffset: '2px',
                     },
                 },
             },
