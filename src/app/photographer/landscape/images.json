@@ -1,0 +1,14 @@
+{
+    "images": [
+        {
+            "imagePath": "/images/photography/landscapes/barcelona.jpeg",
+            "thumbnailPath": "/images/photography/landscapes/barcelona-thumbnail.jpeg",
+            "caption": "Barcelona"
+        },
+        {
+            "imagePath": "/images/photography/landscapes/etretat-cliffs.jpeg",
+            "thumbnailPath": "/images/photography/landscapes/etretat-cliffs-thumbnail.jpeg",
+            "caption": "Etretat cliffs"
+        }
+    ]
+}
