@@ -1,7 +1,10 @@
 'use client'
-import { Box, Toolbar, Typography } from "@mui/material";
+import { Box, Typography, Select, MenuItem } from "@mui/material";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { useTheme } from "@mui/material/styles";
+import React from "react";
 
 const navLinkSx = {
     position: 'relative',
@@ -24,7 +27,6 @@ const navLinkSx = {
     },
 };
 
-
 export interface SubheaderLinkProps {
     title: string;
     url: string;
@@ -32,6 +34,33 @@ export interface SubheaderLinkProps {
 
 export const Subheader: React.FC<{ links: SubheaderLinkProps[] }> = ({ links }) => {
     const pathname = usePathname();
+    const router = useRouter();
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
+    // Find the currently selected link
+    const selectedLink = links.find(link => pathname === link.url) || links[0];
+
+    if (isMobile) {
+        return (
+            <Box sx={{ width: '100%', display: 'flex', justifyContent: 'center', py: 1 }}>
+                <Select
+                    value={selectedLink.url}
+                    onChange={e => router.push(e.target.value)}
+                    variant="outlined"
+                    size="small"
+                    sx={{ minWidth: 180, fontWeight: 600, bgcolor: 'background.paper' }}
+                    displayEmpty
+                >
+                    {links.map(link => (
+                        <MenuItem key={link.url} value={link.url}>
+                            {link.title}
+                        </MenuItem>
+                    ))}
+                </Select>
+            </Box>
+        );
+    }
 
     return (
         <Box sx={{ display: 'flex', gap: 4, width: '100%', justifyContent: 'center'}}>

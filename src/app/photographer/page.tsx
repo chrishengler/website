@@ -5,10 +5,16 @@ function Page() {
         <>
             <Typography>
                 I developed an interest in photography during my time at university,
-                and have continued to shoot as a hobby on-and-off ever since. My 
-                preferred subjects are mostly architecture, landscapes (natural and
-                human-influenced), wildlife, and perhaps especially the intersections 
-                of those categories. 
+                when I attempted Project 365 with a Ricoh R8 system camera. I didn't
+                make it to the end of the year, but I think my 182 days was a reasonable
+                effort and it definitely helped me to find themes and compositions that
+                work for me.
+            </Typography>
+            <Typography>
+                I've continued shooting on and off ever since, now using a Nikon D7100
+                with a variety of second hand lenses. My preferred subjects are mostly
+                architecture, landscapes (natural and human-influenced), wildlife, and
+                perhaps especially the intersections of those categories. 
             </Typography>
             <Typography>
                 I'm strictly an amateur and don't aim to produce work of a commercial 

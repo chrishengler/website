@@ -21,8 +21,8 @@ export default function Page() {
                 positions based elsewhere in Germany.
             </Typography>
             <Typography variant="body1">
-                If you want to discuss opportunities, I can be contacted on 
-                <Link href="https://linkedin.com/chris-hengler">LinkedIn</Link> (preferred) 
+                If you want to discuss opportunities, I can be contacted 
+                on <Link href="https://linkedin.com/chris-hengler">LinkedIn</Link> (preferred) 
                 or <Link href="https://www.xing.com/profile/Chris_Hengler">Xing</Link>.
             </Typography>
        </>

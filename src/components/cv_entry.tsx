@@ -6,7 +6,7 @@ interface CvEntryProps {
     position: string;
     timePeriod: string;
     description: string;
-    keyAchievements?: string[]; // changed from string to string[]
+    keyAchievements?: string[]; 
 }
 
 const CvEntry: React.FC<CvEntryProps> = ({
