@@ -14,7 +14,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 
 const navItems = [
-    { title: 'artist', url: '/artist' },
+    // { title: 'artist', url: '/artist' },
     { title: 'developer', url: '/developer' },
     { title: 'photographer', url: '/photographer' },
     { title: 'elsewhere', url: '/elsewhere' },
