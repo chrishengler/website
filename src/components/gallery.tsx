@@ -1,5 +1,5 @@
 'use client'
-import { Box, Paper, Typography, IconButton } from "@mui/material";
+import { Box, Paper, Typography, IconButton, useMediaQuery, useTheme } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
@@ -23,42 +23,77 @@ const Gallery: React.FC<GalleryProps> = ({images, width, height}) => {
     const prevImage = () => setSelectedIdx(idx => (idx === 0 ? images.length - 1 : idx - 1));
     const nextImage = () => setSelectedIdx(idx => (idx === images.length - 1 ? 0 : idx + 1));
 
+    // Calculate aspect ratio as a percentage for padding-top
+    const aspectRatio = (height / width) * 100;
+
+    // Responsive thumbnail size
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+    const thumbWidth = isMobile ? 60 : 150;
+    const thumbHeight = isMobile ? 40 : 100;
+    const buttonFontSize = isMobile? "small" : "large";
+
     return (
-        <Paper sx={{p: 2}}>
+        <>
             {images.length > 0 && (
             <>
                 {/* Main image with navigation buttons */}
                 <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
                     <IconButton onClick={prevImage} aria-label="Previous image">
-                        <NavigateBeforeIcon fontSize="large" />
+                        <NavigateBeforeIcon fontSize={buttonFontSize} />
                     </IconButton>
-                    <Box sx={{ flexGrow: 1 }}>
-                        <Image
-                            src={images[selectedIdx].imagePath}
-                            alt={images[selectedIdx].caption || "Gallery image"}
-                            width={width}
-                            height={height}
-                            style={{ width: "100%", height: "auto", display: "block" }}
-                        />
-                        <Typography variant="body1" align="center">{images[selectedIdx].caption}</Typography>
+                    <Box sx={{ flexGrow: 1, maxWidth: width, minWidth: 0 }}>
+                        <Box
+                            sx={{
+                                position: "relative",
+                                width: "100%",
+                                paddingTop: `${aspectRatio}%`,
+                            }}
+                        >
+                            <Image
+                                src={images[selectedIdx].imagePath}
+                                alt={images[selectedIdx].caption || "Gallery image"}
+                                fill
+                                style={{
+                                    objectFit: "contain",
+                                    position: "absolute",
+                                    top: 0,
+                                    left: 0,
+                                    width: "100%",
+                                    height: "100%",
+                                    display: "block"
+                                }}
+                                sizes="(max-width: 1000px) 100vw, 1000px"
+                            />
+                        </Box>
+                        <Box>
+                        <Typography align="center" sx={{ color: "text.secondary" }}>
+                            {images[selectedIdx].caption}
+                        </Typography>
+                        </Box>
                     </Box>
                     <IconButton onClick={nextImage} aria-label="Next image">
-                        <NavigateNextIcon fontSize="large" />
+                        <NavigateNextIcon fontSize={buttonFontSize}/>
                     </IconButton>
                 </Box>
+
                 {/* Thumbnails with navigation buttons */}
                 <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", mt: 2 }}>
-                    <IconButton onClick={prevImage} aria-label="Previous image (thumbnails)">
-                        <NavigateBeforeIcon />
-                    </IconButton>
-                    <Box sx={{ display: "flex", gap: 1 }}>
+                    <Box
+                        sx={{
+                            display: "flex",
+                            gap: 1,
+                            overflowX: "auto",
+                            maxWidth: "100%",
+                        }}
+                    >
                         {images.map((img, idx) => (
                             <Image
                                 key={idx}
                                 src={img.thumbnailPath}
                                 alt={img.caption || `Thumbnail ${idx + 1}`}
-                                width={150}
-                                height={100}
+                                width={thumbWidth}
+                                height={thumbHeight}
                                 style={{
                                     cursor: "pointer",
                                     borderRadius: 4,
@@ -70,13 +105,10 @@ const Gallery: React.FC<GalleryProps> = ({images, width, height}) => {
                             />
                         ))}
                     </Box>
-                    <IconButton onClick={nextImage} aria-label="Next image (thumbnails)">
-                        <NavigateNextIcon />
-                    </IconButton>
                 </Box>
             </>
             )}
-        </Paper>
+        </>
     );
 };
 

@@ -1,14 +1,64 @@
 {
     "images": [
         {
-            "imagePath": "/images/photography/landscapes/barcelona.jpeg",
+            "imagePath": "/images/photography/landscapes/barcelona-1500.jpeg",
             "thumbnailPath": "/images/photography/landscapes/barcelona-thumbnail.jpeg",
             "caption": "Barcelona"
         },
         {
-            "imagePath": "/images/photography/landscapes/etretat-cliffs.jpeg",
+            "imagePath": "/images/photography/landscapes/etretat-cliffs-1500.jpeg",
             "thumbnailPath": "/images/photography/landscapes/etretat-cliffs-thumbnail.jpeg",
             "caption": "Etretat cliffs"
+        },
+        {
+            "imagePath": "/images/photography/landscapes/fehmarn-sunset-1500.jpeg",
+            "thumbnailPath": "/images/photography/landscapes/fehmarn-sunset-thumbnail.jpeg",
+            "caption": "Fehmarn sunset"
+        },
+        {
+            "imagePath": "/images/photography/landscapes/godafoss-1500.jpeg",
+            "thumbnailPath": "/images/photography/landscapes/godafoss-thumbnail.jpeg",
+            "caption": "Godafoss"
+        },
+        {
+            "imagePath": "/images/photography/landscapes/kotlin-trees-1500.jpeg",
+            "thumbnailPath": "/images/photography/landscapes/kotlin-trees-thumbnail.jpeg",
+            "caption": "Trees on the shore at Kotlin island"
+        },
+        {
+            "imagePath": "/images/photography/landscapes/montserrat-cablecar-1500.jpeg",
+            "thumbnailPath": "/images/photography/landscapes/montserrat-cablecar-thumbnail.jpeg",
+            "caption": "Montserrat cablecar"
+        },
+        {
+            "imagePath": "/images/photography/landscapes/montserrat-hills-1500.jpeg",
+            "thumbnailPath": "/images/photography/landscapes/montserrat-hills-thumbnail.jpeg",
+            "caption": "Montserrat hills"
+        },
+        {
+            "imagePath": "/images/photography/landscapes/paris-rooftops-1500.jpeg",
+            "thumbnailPath": "/images/photography/landscapes/paris-rooftops-thumbnail.jpeg",
+            "caption": "Paris rooftops"
+        },
+        {
+            "imagePath": "/images/photography/landscapes/reykholar-1500.jpeg",
+            "thumbnailPath": "/images/photography/landscapes/reykholar-thumbnail.jpeg",
+            "caption": "Near Reykholar"
+        },
+        {
+            "imagePath": "/images/photography/landscapes/svartifoss-1500.jpeg",
+            "thumbnailPath": "/images/photography/landscapes/svartifoss-thumbnail.jpeg",
+            "caption": "Svartifoss"
+        },
+        {
+            "imagePath": "/images/photography/landscapes/teriberka-hut-1500.jpeg",
+            "thumbnailPath": "/images/photography/landscapes/teriberka-hut-thumbnail.jpeg",
+            "caption": "Hut near Teriberka"
+        },
+        {
+            "imagePath": "/images/photography/landscapes/teriberka-waterfall-1500.jpeg",
+            "thumbnailPath": "/images/photography/landscapes/teriberka-waterfall-thumbnail.jpeg",
+            "caption": "Waterfall near Teriberka"
         }
     ]
 }

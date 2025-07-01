@@ -1,4 +1,8 @@
 import { Typography } from "@mui/material";
+import imagesJson from "./images.json";
+import Gallery from "@/components/gallery";
+
+const images = imagesJson.images;
 
 function Page() {
     return (
@@ -13,6 +17,7 @@ function Page() {
                 composition in architecture photos was much better 15 years ago than it is today. 
                 I'll have to work on that.
             </Typography>
+            <Gallery images={images} width={1500} height={1000} />
         </>
     )
 }

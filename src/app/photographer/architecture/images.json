@@ -1,0 +1,64 @@
+{
+    "images": [
+        {
+            "imagePath": "/images/photography/architecture/danilovskiy-market-1500.jpeg",
+            "thumbnailPath": "/images/photography/architecture/danilovskiy-market-thumbnail.jpeg",
+            "caption": "Danilovskiy market in Moscow"
+        },
+        {
+            "imagePath": "/images/photography/architecture/etretat-church-1500.jpeg",
+            "thumbnailPath": "/images/photography/architecture/etretat-church-thumbnail.jpeg",
+            "caption": "The church over Etretat"
+        },
+        {
+            "imagePath": "/images/photography/architecture/golden-brains-1500.jpeg",
+            "thumbnailPath": "/images/photography/architecture/golden-brains-thumbnail.jpeg",
+            "caption": "The 'Golden Brains' Russian Academy of Science building in Moscow"
+        },
+        {
+            "imagePath": "/images/photography/architecture/liverpool-huskisson-memorial-1500.jpeg",
+            "thumbnailPath": "/images/photography/architecture/liverpool-huskisson-memorial-thumbnail.jpeg",
+            "caption": "The Huskisson Memorial in Liverpool, shot in partial silhouette"
+        },
+        {
+            "imagePath": "/images/photography/architecture/liverpool-silkhouse-court-1500.jpeg",
+            "thumbnailPath": "/images/photography/architecture/liverpool-silkhouse-court-thumbnail.jpeg",
+            "caption": "Silkhouse Court in Liverpool, before the renovation"
+        },
+        {
+            "imagePath": "/images/photography/architecture/liverpool-university-energy-centre-1500.jpeg",
+            "thumbnailPath": "/images/photography/architecture/liverpool-university-energy-centre-thumbnail.jpeg",
+            "caption": "Detail of the University of Liverpool Energy Centre"
+        },
+        {
+            "imagePath": "/images/photography/architecture/montserrat-church-1500.jpeg",
+            "thumbnailPath": "/images/photography/architecture/montserrat-church-thumbnail.jpeg",
+            "caption": "A small chapel at Montserrat near Barcelona"
+        },
+        {
+            "imagePath": "/images/photography/architecture/reykjavik-harpa-1500.jpeg",
+            "thumbnailPath": "/images/photography/architecture/reykjavik-harpa-thumbnail.jpeg",
+            "caption": "The Harpa conference centre in Reykjavik"
+        },
+        {
+            "imagePath": "/images/photography/architecture/stp-cathedral-detail-1500.jpeg",
+            "thumbnailPath": "/images/photography/architecture/stp-cathedral-detail-thumbnail.jpeg",
+            "caption": "An internal shot from St. Isaac's Cathedral in St. Petersburg"
+        },
+        {
+            "imagePath": "/images/photography/architecture/vdnkh-fountain-1500.jpeg",
+            "thumbnailPath": "/images/photography/architecture/vdnkh-fountain-thumbnail.jpeg",
+            "caption": "The Friendship of Peoples fountain at VDNKh in Moscow"
+        },
+        {
+            "imagePath": "/images/photography/architecture/vdnkh-kosmos-1500.jpeg",
+            "thumbnailPath": "/images/photography/architecture/vdnkh-kosmos-thumbnail.jpeg",
+            "caption": "The Cosmos pavilion at VDNKh in Moscow"
+        },
+        {
+            "imagePath": "/images/photography/architecture/vik-church-1500.jpeg",
+            "thumbnailPath": "/images/photography/architecture/vik-church-thumbnail.jpeg",
+            "caption": "The church above Vik in Iceland"
+        }
+    ]
+}
