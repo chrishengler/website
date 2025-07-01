@@ -7,8 +7,9 @@ export default function Page() {
         <>
             <Typography variant="body1">
                 I am a software developer with over a decade of experience producing efficient and 
-                reliable code in multiple domains using multiple languages. I'm versatile and always 
-                willing to step outside my comfort zone and learn new technologies.
+                reliable code in multiple domains using multiple languages. I feel most at home
+                working on the backend, but I'm versatile and always willing to step outside my 
+                comfort zone and learn new technologies.
             </Typography> 
             <Typography variant="body1">
                 I have a PhD in particle physics and I bring an analytical mindset, which enables me 
