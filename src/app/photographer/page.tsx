@@ -11,10 +11,12 @@ function Page() {
                 work for me.
             </Typography>
             <Typography>
-                I've continued shooting on and off ever since, now using a Nikon D7100
-                with a variety of second hand lenses. My preferred subjects are mostly
-                architecture, landscapes (natural and human-influenced), wildlife, and
-                perhaps especially the intersections of those categories. 
+                I've continued shooting on and off ever since, now primarily using a 
+                Nikon D7100 with a variety of second hand lenses (although the best camera,
+                of course, is the one you happen to have with you - which may often be just
+                my iPhone). My preferred subjects are mostly architecture, landscapes 
+                (natural and human-influenced), wildlife, and perhaps especially the 
+                intersections of those categories. 
             </Typography>
             <Typography>
                 I'm strictly an amateur and don't aim to produce work of a commercial 
