@@ -1,0 +1,34 @@
+{
+    "images": [
+        {
+            "imagePath": "/images/photography/architecture/reykjavik-harpa-1500.jpeg",
+            "thumbnailPath": "/images/photography/architecture/reykjavik-harpa-thumbnail.jpeg",
+            "caption": "The Harpa conference centre in Reykjavik"
+        },
+        {
+            "imagePath": "/images/photography/architecture/golden-brains-1500.jpeg",
+            "thumbnailPath": "/images/photography/architecture/golden-brains-thumbnail.jpeg",
+            "caption": "The 'Golden Brains' Russian Academy of Science building in Moscow"
+        },
+        {
+            "imagePath": "/images/photography/landscapes/kotlin-trees-1500.jpeg",
+            "thumbnailPath": "/images/photography/landscapes/kotlin-trees-thumbnail.jpeg",
+            "caption": "Trees on the shore at Kotlin island"
+        },
+        {
+            "imagePath": "/images/photography/landscapes/reykholar-1500.jpeg",
+            "thumbnailPath": "/images/photography/landscapes/reykholar-thumbnail.jpeg",
+            "caption": "Near Reykholar"
+        },
+        {
+            "imagePath": "/images/photography/wildlife/bank-swallow-1500.jpeg",
+            "thumbnailPath": "/images/photography/wildlife/bank-swallow-thumbnail.jpeg",
+            "caption": "A bank swallow resting on a branch at Wedeler Marsch near Hamburg"
+        },
+        {
+            "imagePath": "/images/photography/wildlife/whale-1500.jpeg",
+            "thumbnailPath": "/images/photography/wildlife/whale-thumbnail.jpeg",
+            "caption": "A hupmback whale in the waters of Iceland"
+        }
+    ]
+}

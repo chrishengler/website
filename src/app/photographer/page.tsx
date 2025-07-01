@@ -1,4 +1,8 @@
 import { Typography } from "@mui/material";
+import imagesJson from "./images.json";
+import Gallery from "@/components/gallery";
+
+const images = imagesJson.images;
 
 function Page() {
     return (
@@ -24,6 +28,7 @@ function Page() {
                 of my favourites are shown in the gallery on this page, additional 
                 examples can be seen on the other pages in this category.
             </Typography>
+            <Gallery images={images} width={1500} height={1000} />
         </>
     )
 }
