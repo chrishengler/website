@@ -32,7 +32,7 @@ export interface SubheaderLinkProps {
     url: string;
 }
 
-export const Subheader: React.FC<{ links: SubheaderLinkProps[] }> = ({ links }) => {
+export const Subheader: React.FC<{ links: SubheaderLinkProps[], sectionTitle: string }> = ({ links, sectionTitle }) => {
     const pathname = usePathname();
     const router = useRouter();
     const theme = useTheme();
@@ -43,7 +43,9 @@ export const Subheader: React.FC<{ links: SubheaderLinkProps[] }> = ({ links }) 
 
     if (isMobile) {
         return (
-            <Box sx={{ width: '100%', display: 'flex', justifyContent: 'center', py: 1 }}>
+            <>
+            <Typography variant="h5">{sectionTitle}</Typography>
+            <Box sx={{ width: '100%', display: 'flex', py: 1 }}>
                 <Select
                     value={selectedLink.url}
                     onChange={e => router.push(e.target.value)}
@@ -59,6 +61,7 @@ export const Subheader: React.FC<{ links: SubheaderLinkProps[] }> = ({ links }) 
                     ))}
                 </Select>
             </Box>
+            </>
         );
     }
 

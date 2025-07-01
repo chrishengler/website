@@ -10,7 +10,7 @@ const links = [
 export default function PhotographerLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <Subheader links={links} />
+      <Subheader links={links} sectionTitle="photographer"/>
       {children}
     </>
   );

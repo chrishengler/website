@@ -10,7 +10,7 @@ const links = [
 export default function DeveloperLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      <Subheader links={links} />
+      <Subheader links={links} sectionTitle='developer'/>
       {children}
     </>
   );
