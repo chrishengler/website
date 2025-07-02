@@ -19,12 +19,35 @@ function Page() {
         <ListItem>Python</ListItem>
       </List>
       <Typography variant="body1">
-        I also have some familiarity with the following
+        I also have some familiarity with the following:
       </Typography>
       <List sx={{ pl: 4 }}>
         <ListItem>C# (intermediate)</ListItem>
         <ListItem>JavaScript (basic)</ListItem>
         <ListItem>TypeScript (basic)</ListItem>
+      </List>
+      <Typography variant="h4" sx={{ pt: 2 }}>
+        Frameworks and Tools
+      </Typography>
+      <Typography variant="body1">
+        I have significant professional experience with the following frameworks
+        and tools:
+      </Typography>
+      <List sx={{ pl: 4 }}>
+        <ListItem>Django and Django REST Framework</ListItem>
+        <ListItem>PostgreSQL</ListItem>
+        <ListItem>Google Cloud Platform</ListItem>
+        <ListItem>Boost Library</ListItem>
+      </List>
+      <Typography variant="body1">
+        I also have some experience with the frameworks and tools listed below:
+      </Typography>
+      <List sx={{ pl: 4 }}>
+        <ListItem>Docker</ListItem>
+        <ListItem>Qt</ListItem>
+        <ListItem>React/Next.js</ListItem>
+        <ListItem>Asio</ListItem>
+        <ListItem>WebSocket</ListItem>
       </List>
     </>
   );
