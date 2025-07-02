@@ -4,9 +4,9 @@ function Page() {
     return (
         <>
             <Typography variant="body1">
-                Over the course of my career I've worked with too many different technologies
+                {`Over the course of my career I've worked with too many different technologies
                 to list all of them here.  What you'll find below is just a summary of some of 
-                those I have worked with most often, most recently, or most happily. 
+                those I have worked with most often, most recently, or most happily. `}
             </Typography>
             <Typography variant="h4" sx={{pt: 2}}>
                 Programming Languages
