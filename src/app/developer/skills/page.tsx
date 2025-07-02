@@ -46,7 +46,6 @@ function Page() {
         <ListItem>Docker</ListItem>
         <ListItem>Qt</ListItem>
         <ListItem>React/Next.js</ListItem>
-        <ListItem>Asio</ListItem>
         <ListItem>WebSocket</ListItem>
       </List>
     </>
