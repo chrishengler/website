@@ -15,10 +15,6 @@ function Page() {
                 work for me.`}
       </Typography>
       <Typography>
-        I'm raw text and should be escaped or encapsulated as a string or
-        something
-      </Typography>
-      <Typography>
         {`I've continued shooting on and off ever since, now primarily using a 
                 Nikon D7100 with a variety of second hand lenses (although the best camera,
                 of course, is the one you happen to have with you - which may often be just

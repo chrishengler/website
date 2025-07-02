@@ -1,9 +1,11 @@
 {
   "*.ts": [
-    "npx prettier  --write"
+    "npx prettier  --write",
+    "npx eslint"
   ],
   "*.tsx": [
-    "npx prettier --write"
+    "npx prettier --write",
+    "npx eslint"
   ],
   "*.scss": "npm run prettier --write"
 }
