@@ -18,6 +18,7 @@ interface GalleryProps {
 }
 
 const Gallery: React.FC<GalleryProps> = ({images, width, height}) => {
+    console.log('entering Gallery')
     const [selectedIdx, setSelectedIdx] = React.useState(0);
 
     const prevImage = () => setSelectedIdx(idx => (idx === 0 ? images.length - 1 : idx - 1));
