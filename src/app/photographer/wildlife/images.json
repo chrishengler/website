@@ -1,64 +1,64 @@
 {
-    "images": [
-        {
-            "imagePath": "/images/photography/wildlife/bank-swallow-1500.jpeg",
-            "thumbnailPath": "/images/photography/wildlife/bank-swallow-thumbnail.jpeg",
-            "caption": "A bank swallow resting on a branch at Wedeler Marsch near Hamburg"
-        },
-        {
-            "imagePath": "/images/photography/wildlife/great-spotted-woodpecker-1500.jpeg",
-            "thumbnailPath": "/images/photography/wildlife/great-spotted-woodpecker-thumbnail.jpeg",
-            "caption": "A great spotted woodpecker at its nest"
-        },
-        {
-            "imagePath": "/images/photography/wildlife/nuthatch-1500.jpeg",
-            "thumbnailPath": "/images/photography/wildlife/nuthatch-thumbnail.jpeg",
-            "caption": "A eurasian nuthatch seen near its nest"
-        },
-        {
-            "imagePath": "/images/photography/wildlife/puffin-silhouette-1500.jpeg",
-            "thumbnailPath": "/images/photography/wildlife/puffin-silhouette-thumbnail.jpeg",
-            "caption": "A puffin in flight, seen in silhouette"
-        },
-        {
-            "imagePath": "/images/photography/wildlife/puffin-swimming-1500.jpeg",
-            "thumbnailPath": "/images/photography/wildlife/puffin-swimming-thumbnail.jpeg",
-            "caption": "A puffin bobbing on the waves off the coast of Iceland"
-        },
-        {
-            "imagePath": "/images/photography/wildlife/ring-necked-pheasant-1500.jpeg",
-            "thumbnailPath": "/images/photography/wildlife/ring-necked-pheasant-thumbnail.jpeg",
-            "caption": "A ring-necked pheasant, spotted on Fehmarn"
-        },
-        {
-            "imagePath": "/images/photography/wildlife/squirrel-standing-1500.jpeg",
-            "thumbnailPath": "/images/photography/wildlife/squirrel-standing-thumbnail.jpeg",
-            "caption": "An urban squirrel standing on its hind legs, seemingly shocked to be photographed"
-        },
-        {
-            "imagePath": "/images/photography/wildlife/squirrel-with-nut-1500.jpeg",
-            "thumbnailPath": "/images/photography/wildlife/squirrel-with-nut-thumbnail.jpeg",
-            "caption": "Squirrel with nut"
-        },
-        {
-            "imagePath": "/images/photography/wildlife/tern-soaring-1500.jpeg",
-            "thumbnailPath": "/images/photography/wildlife/tern-soaring-thumbnail.jpeg",
-            "caption": "An arctic tern soaring in a clear blue sky"
-        },
-        {
-            "imagePath": "/images/photography/wildlife/tern-with-eel-1500.jpeg",
-            "thumbnailPath": "/images/photography/wildlife/tern-with-eel-thumbnail.jpeg",
-            "caption": "An arctic tern with a successful catch (likely a sand eel) seen in Iceland"
-        },
-        {
-            "imagePath": "/images/photography/wildlife/tree-sparrow-1500.jpeg",
-            "thumbnailPath": "/images/photography/wildlife/tree-sparrow-thumbnail.jpeg",
-            "caption": "A tree sparrow seen at Wedeler Marsch near Hamburg"
-        },
-        {
-            "imagePath": "/images/photography/wildlife/whale-1500.jpeg",
-            "thumbnailPath": "/images/photography/wildlife/whale-thumbnail.jpeg",
-            "caption": "A hupmback whale in the waters of Iceland"
-        }
-    ]
+  "images": [
+    {
+      "imagePath": "/images/photography/wildlife/bank-swallow-1500.jpeg",
+      "thumbnailPath": "/images/photography/wildlife/bank-swallow-thumbnail.jpeg",
+      "caption": "A bank swallow resting on a branch at Wedeler Marsch near Hamburg"
+    },
+    {
+      "imagePath": "/images/photography/wildlife/great-spotted-woodpecker-1500.jpeg",
+      "thumbnailPath": "/images/photography/wildlife/great-spotted-woodpecker-thumbnail.jpeg",
+      "caption": "A great spotted woodpecker at its nest"
+    },
+    {
+      "imagePath": "/images/photography/wildlife/nuthatch-1500.jpeg",
+      "thumbnailPath": "/images/photography/wildlife/nuthatch-thumbnail.jpeg",
+      "caption": "A eurasian nuthatch seen near its nest"
+    },
+    {
+      "imagePath": "/images/photography/wildlife/puffin-silhouette-1500.jpeg",
+      "thumbnailPath": "/images/photography/wildlife/puffin-silhouette-thumbnail.jpeg",
+      "caption": "A puffin in flight, seen in silhouette"
+    },
+    {
+      "imagePath": "/images/photography/wildlife/puffin-swimming-1500.jpeg",
+      "thumbnailPath": "/images/photography/wildlife/puffin-swimming-thumbnail.jpeg",
+      "caption": "A puffin bobbing on the waves off the coast of Iceland"
+    },
+    {
+      "imagePath": "/images/photography/wildlife/ring-necked-pheasant-1500.jpeg",
+      "thumbnailPath": "/images/photography/wildlife/ring-necked-pheasant-thumbnail.jpeg",
+      "caption": "A ring-necked pheasant, spotted on Fehmarn"
+    },
+    {
+      "imagePath": "/images/photography/wildlife/squirrel-standing-1500.jpeg",
+      "thumbnailPath": "/images/photography/wildlife/squirrel-standing-thumbnail.jpeg",
+      "caption": "An urban squirrel standing on its hind legs, seemingly shocked to be photographed"
+    },
+    {
+      "imagePath": "/images/photography/wildlife/squirrel-with-nut-1500.jpeg",
+      "thumbnailPath": "/images/photography/wildlife/squirrel-with-nut-thumbnail.jpeg",
+      "caption": "Squirrel with nut"
+    },
+    {
+      "imagePath": "/images/photography/wildlife/tern-soaring-1500.jpeg",
+      "thumbnailPath": "/images/photography/wildlife/tern-soaring-thumbnail.jpeg",
+      "caption": "An arctic tern soaring in a clear blue sky"
+    },
+    {
+      "imagePath": "/images/photography/wildlife/tern-with-eel-1500.jpeg",
+      "thumbnailPath": "/images/photography/wildlife/tern-with-eel-thumbnail.jpeg",
+      "caption": "An arctic tern with a successful catch (likely a sand eel) seen in Iceland"
+    },
+    {
+      "imagePath": "/images/photography/wildlife/tree-sparrow-1500.jpeg",
+      "thumbnailPath": "/images/photography/wildlife/tree-sparrow-thumbnail.jpeg",
+      "caption": "A tree sparrow seen at Wedeler Marsch near Hamburg"
+    },
+    {
+      "imagePath": "/images/photography/wildlife/whale-1500.jpeg",
+      "thumbnailPath": "/images/photography/wildlife/whale-thumbnail.jpeg",
+      "caption": "A hupmback whale in the waters of Iceland"
+    }
+  ]
 }
