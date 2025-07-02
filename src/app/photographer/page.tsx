@@ -1,10 +1,29 @@
 import { Typography } from "@mui/material";
-import imagesJson from "./images.json";
+import architectureImagesJson from "./architecture/images.json";
+import landscapeImagesJson from "./landscape/images.json";
+import wildlifeImagesJson from "./wildlife/images.json";
 import Gallery from "@/components/gallery";
 
-const images = imagesJson.images;
+const architectureImages = architectureImagesJson.images;
+const landscapeImages = landscapeImagesJson.images;
+const wildlifeImages = wildlifeImagesJson.images;
+
+function getRandomElements<Type>(arr: Type[], size: number): Type[] {
+  if (arr.length == 0) {
+    return [];
+  }
+  arr.sort(() => 0.5 - Math.random());
+  if (arr.length <= size) {
+    return arr;
+  }
+  return arr.slice(0, size);
+}
 
 function Page() {
+  const images = (getRandomElements(architectureImages, 2) ?? [])
+    .concat(getRandomElements(landscapeImages, 2) ?? [])
+    .concat(getRandomElements(wildlifeImages, 2) ?? []);
+  images.sort(() => 0.5 - Math.random());
   return (
     <>
       <Typography>
@@ -24,9 +43,10 @@ function Page() {
       </Typography>
       <Typography>
         {`I'm strictly an amateur and don't aim to produce work of a commercial 
-                standard, but I'm very happy with some of the shots I have taken. A few
-                of my favourites are shown in the gallery on this page, additional 
-                examples can be seen on the other pages in this category.`}
+                standard, but I'm very happy with some of the shots I have taken. 
+                The gallery on this page shows a few images selected at random, additional 
+                examples can be seen by navigating through to the pages for each 
+                category.`}
       </Typography>
       <Gallery images={images} width={1500} height={1000} />
     </>
