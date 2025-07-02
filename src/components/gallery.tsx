@@ -1,5 +1,5 @@
 'use client'
-import { Box, Paper, Typography, IconButton, useMediaQuery, useTheme } from "@mui/material";
+import { Box, Typography, IconButton, useMediaQuery, useTheme } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
