@@ -4,7 +4,7 @@ import { List, ListItem } from "@mui/material";
 export default function Page() {
   return (
     <>
-      <List sx={{ padding: 2 }}>
+      <List>
         <ListItem>
           <CvEntry
             employer="Normalis"
