@@ -22,8 +22,8 @@ export default function HomePage() {
 
       <Typography variant="body1">
         {`In my free time I enjoy - among other things - birdwatching, photography, painting and sketching.
-                Some of my art can be found on my `}
-        <Link href="/art">art page</Link>.
+                Some of my photography can be found on my `}
+        <Link href="/photographer">photographer</Link>.
       </Typography>
     </div>
   );
