@@ -58,7 +58,7 @@ const Header: React.FC = () => {
     <AppBar position="static">
       <Toolbar>
         <Typography
-          variant="h3"
+          variant="h4"
           component="div"
           sx={{ flexGrow: 1, p: 2 }}
           gutterBottom={false}

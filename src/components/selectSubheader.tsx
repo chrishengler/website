@@ -1,5 +1,5 @@
 "use client";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { Box, MenuItem, Select } from "@mui/material";
 
 export interface SubheaderLinkProps {
