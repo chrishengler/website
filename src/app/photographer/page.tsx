@@ -3,21 +3,11 @@ import architectureImagesJson from "./architecture/images.json";
 import landscapeImagesJson from "./landscape/images.json";
 import wildlifeImagesJson from "./wildlife/images.json";
 import Gallery from "@/components/gallery";
+import getRandomElements from "@/utils/randomElements";
 
 const architectureImages = architectureImagesJson.images;
 const landscapeImages = landscapeImagesJson.images;
 const wildlifeImages = wildlifeImagesJson.images;
-
-function getRandomElements<Type>(arr: Type[], size: number): Type[] {
-  if (arr.length == 0) {
-    return [];
-  }
-  arr.sort(() => 0.5 - Math.random());
-  if (arr.length <= size) {
-    return arr;
-  }
-  return arr.slice(0, size);
-}
 
 function Page() {
   const images = (getRandomElements(architectureImages, 2) ?? [])

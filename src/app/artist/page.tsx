@@ -1,7 +1,21 @@
 import React from "react";
+import drawingImagesJson from "./drawing/images.json";
+import oilImagesJson from "./oil/images.json";
+import watercolourImagesJson from "./watercolour/images.json";
 import Typography from "@mui/material/Typography";
+import Gallery from "@/components/gallery";
+import getRandomElements from "@/utils/randomElements";
+
+const drawingImages = drawingImagesJson.images;
+const oilImages = oilImagesJson.images;
+const watercolourImages = watercolourImagesJson.images;
 
 export default function Page() {
+  const images = (getRandomElements(drawingImages, 2) ?? [])
+    .concat(getRandomElements(oilImages, 2) ?? [])
+    .concat(getRandomElements(watercolourImages, 2) ?? []);
+  images.sort(() => 0.5 - Math.random());
+
   return (
     <>
       <Typography variant="body1">
@@ -24,6 +38,7 @@ export default function Page() {
       landscapes, and wildlife.  Navigate through to each section to 
       see some examples of my work.`}
       </Typography>
+      <Gallery images={images} width={1500} height={1000} />
     </>
   );
 }
