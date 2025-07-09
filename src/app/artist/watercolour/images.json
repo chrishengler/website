@@ -1,0 +1,39 @@
+{
+  "images": [
+    {
+      "imagePath": "/images/art/watercolour/dynjandi.jpg",
+      "thumbnailPath": "/images/art/watercolour/dynjandi-thumbnail.jpg",
+      "caption": "The stunning Dynjandi waterfall in Iceland's west fjords"
+    },
+    {
+      "imagePath": "/images/art/watercolour/etretat_cliffs.jpg",
+      "thumbnailPath": "/images/art/watercolour/etretat_cliffs-thumbnail.jpg",
+      "caption": "The cliffs near Etretat, France"
+    },
+    {
+      "imagePath": "/images/art/watercolour/harz.jpg",
+      "thumbnailPath": "/images/art/watercolour/harz-thumbnail.jpg",
+      "caption": "A path in the Harz mountains, Germany"
+    },
+    {
+      "imagePath": "/images/art/watercolour/reykholar.jpg",
+      "thumbnailPath": "/images/art/watercolour/reykholar-thumbnail.jpg",
+      "caption": "Near Reykholar, Iceland"
+    },
+    {
+      "imagePath": "/images/art/watercolour/teriberka_school.jpg",
+      "thumbnailPath": "/images/art/watercolour/teriberka_school-thumbnail.jpg",
+      "caption": "The abandoned school in the old town of Teriberka, Russia"
+    },
+    {
+      "imagePath": "/images/art/watercolour/tern.jpg",
+      "thumbnailPath": "/images/art/watercolour/tern-thumbnail.jpg",
+      "caption": "An flying arctic tern"
+    },
+    {
+      "imagePath": "/images/art/watercolour/vik.jpg",
+      "thumbnailPath": "/images/art/watercolour/vik-thumbnail.jpg",
+      "caption": "The cliffs off the coast of Vik, Iceland, on a foggy morning"
+    }
+  ]
+}

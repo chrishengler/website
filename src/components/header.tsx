@@ -11,7 +11,7 @@ import MobileHeader from "./mobileHeader";
 import DesktopHeader from "./desktopHeader";
 
 const navItems = [
-  // { title: 'artist', url: '/artist' },
+  { title: "artist", url: "/artist" },
   { title: "developer", url: "/developer" },
   { title: "photographer", url: "/photographer" },
   { title: "elsewhere", url: "/elsewhere" },

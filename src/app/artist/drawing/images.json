@@ -1,0 +1,44 @@
+{
+  "images": [
+    {
+      "imagePath": "/images/art/pencil_ink/arctic_tern.jpg",
+      "thumbnailPath": "/images/art/pencil_ink/arctic_tern-thumbnail.jpg",
+      "caption": "An arctic tern in flight"
+    },
+    {
+      "imagePath": "/images/art/pencil_ink/black_headed_gull.jpg",
+      "thumbnailPath": "/images/art/pencil_ink/black_headed_gull-thumbnail.jpg",
+      "caption": "A black headed gull"
+    },
+    {
+      "imagePath": "/images/art/pencil_ink/swimming_puffin.jpg",
+      "thumbnailPath": "/images/art/pencil_ink/swimming_puffin-thumbnail.jpg",
+      "caption": "A swimming puffin"
+    },
+    {
+      "imagePath": "/images/art/pencil_ink/danilovskiy.jpg",
+      "thumbnailPath": "/images/art/pencil_ink/danilovskiy-thumbnail.jpg",
+      "caption": "The Danilovskiy market in Moscow"
+    },
+    {
+      "imagePath": "/images/art/pencil_ink/lotsenhaus.jpg",
+      "thumbnailPath": "/images/art/pencil_ink/lotsenhaus-thumbnail.jpg",
+      "caption": "Near Övelgönne harbour, Hamburg"
+    },
+    {
+      "imagePath": "/images/art/pencil_ink/heiligendamm_beach.jpg",
+      "thumbnailPath": "/images/art/pencil_ink/heiligendamm_beach-thumbnail.jpg",
+      "caption": "The beach at Heiligendamm"
+    },
+    {
+      "imagePath": "/images/art/pencil_ink/holmavik.jpg",
+      "thumbnailPath": "/images/art/pencil_ink/holmavik-thumbnail.jpg",
+      "caption": "The harbour at Holmavik, Iceland"
+    },
+    {
+      "imagePath": "/images/art/pencil_ink/isafjordur_campsite.jpg",
+      "thumbnailPath": "/images/art/pencil_ink/isafjordur_campsite-thumbnail.jpg",
+      "caption": "The view from the campsite on the edge of Ísafjörður, Iceland"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "images": [
+    {
+      "imagePath": "/images/art/oil/bank_swallow.jpg",
+      "thumbnailPath": "/images/art/oil/bank_swallow-thumbnail.jpg",
+      "caption": "A bank swallow"
+    },
+    {
+      "imagePath": "/images/art/oil/blackbird.jpg",
+      "thumbnailPath": "/images/art/oil/blackbird-thumbnail.jpg",
+      "caption": "A eurasian blackbird"
+    },
+    {
+      "imagePath": "/images/art/oil/blue_tit.jpg",
+      "thumbnailPath": "/images/art/oil/blue_tit-thumbnail.jpg",
+      "caption": "A eurasian blue tit"
+    },
+    {
+      "imagePath": "/images/art/oil/below_dynjandi.jpg",
+      "thumbnailPath": "/images/art/oil/below_dynjandi-thumbnail.jpg",
+      "caption": "A view across the fjords beneath Dynjandi waterfall in Iceland"
+    },
+    {
+      "imagePath": "/images/art/oil/reykholar.jpg",
+      "thumbnailPath": "/images/art/oil/reykholar-thumbnail.jpg",
+      "caption": "View from the campsite at Reykholar, in Iceland's west fjords"
+    },
+    {
+      "imagePath": "/images/art/oil/thumbs.jpg",
+      "thumbnailPath": "/images/art/oil/thumbs-thumbnail.jpg",
+      "caption": "These small thumbnails were some of my first experiments with oil paints"
+    }
+  ]
+}
