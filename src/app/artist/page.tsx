@@ -35,8 +35,8 @@ export default function Page() {
       </Typography>
       <Typography>
         {`Whatever the medium, my art mostly focuses on architecture, 
-      landscapes, and wildlife.  Navigate through to each section to 
-      see some examples of my work.`}
+      landscapes, and wildlife (by which I mostly mean birds).  Navigate
+       through to each section to see some examples of my work.`}
       </Typography>
       <Gallery images={images} width={1500} height={1000} />
     </>
