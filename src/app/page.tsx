@@ -16,14 +16,16 @@ export default function HomePage() {
         {
           " page. I also do some programming in a non-professional capacity, including occasionally making small games as "
         }
-        <Link href="https://cunninghound.itch.io">Cunning Hound</Link>
+        <Link href="https://www.cunninghound.com">Cunning Hound</Link>
         {"."}
       </Typography>
 
       <Typography variant="body1">
         {`In my free time I enjoy - among other things - birdwatching, photography, painting and sketching.
-                Some of my photography can be found under `}
-        <Link href="/photographer">photographer</Link>.
+                Some of my art can be found in the `}
+        <Link href="/artist">artist</Link>
+        {` section, and some of photography can be found in the  `}
+        <Link href="/photographer">photographer</Link> {`section.`}
       </Typography>
     </div>
   );
