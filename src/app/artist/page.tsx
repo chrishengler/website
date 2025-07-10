@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import drawingImagesJson from "./drawing/images.json";
 import oilImagesJson from "./oil/images.json";
 import watercolourImagesJson from "./watercolour/images.json";
@@ -11,10 +12,10 @@ const oilImages = oilImagesJson.images;
 const watercolourImages = watercolourImagesJson.images;
 
 export default function Page() {
-  const images = (getRandomElements(drawingImages, 2) ?? [])
-    .concat(getRandomElements(oilImages, 2) ?? [])
-    .concat(getRandomElements(watercolourImages, 2) ?? []);
-  images.sort(() => 0.5 - Math.random());
+  const images = getRandomElements(
+    drawingImages.concat(oilImages).concat(watercolourImages),
+    6,
+  );
 
   return (
     <>
@@ -31,12 +32,16 @@ export default function Page() {
       </Typography>
       <Typography>
         {`I have also been painting with watercolours for several years, and
-       in recent times have also started painting in oils. `}
+       in recent times have also started painting in oils, particularly for 
+       more realistic bird portraiture. `}
       </Typography>
       <Typography>
         {`Whatever the medium, my art mostly focuses on architecture, 
       landscapes, and wildlife (by which I mostly mean birds).  Navigate
-       through to each section to see some examples of my work.`}
+       through to each section to see some examples of my work. If you take
+       a look at `}{" "}
+        <Link href="/photographer">my photography section</Link>
+        {` you may find the images some of these pieces are based on.`}
       </Typography>
       <Gallery images={images} width={1500} height={1000} />
     </>
