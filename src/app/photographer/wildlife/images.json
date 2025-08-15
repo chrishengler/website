@@ -11,14 +11,19 @@
       "caption": "A great spotted woodpecker at its nest"
     },
     {
+      "imagePath": "/images/photography/wildlife/lapwing-1500.jpeg",
+      "thumbnailPath": "/images/photography/wildlife/lapwing-thumbnail.jpeg",
+      "caption": "A Northern Lapwing seen at NABU Wallnau on Fehmarn"
+    },
+    {
       "imagePath": "/images/photography/wildlife/nuthatch-1500.jpeg",
       "thumbnailPath": "/images/photography/wildlife/nuthatch-thumbnail.jpeg",
       "caption": "A eurasian nuthatch seen near its nest"
     },
     {
-      "imagePath": "/images/photography/wildlife/puffin-silhouette-1500.jpeg",
-      "thumbnailPath": "/images/photography/wildlife/puffin-silhouette-thumbnail.jpeg",
-      "caption": "A puffin in flight, seen in silhouette"
+      "imagePath": "/images/photography/wildlife/deer-1500.jpeg",
+      "thumbnailPath": "/images/photography/wildlife/deer-thumbnail.jpeg",
+      "caption": "A deer seen in a field near Meeschendorf, on Fehmarn"
     },
     {
       "imagePath": "/images/photography/wildlife/puffin-swimming-1500.jpeg",
@@ -44,11 +49,6 @@
       "imagePath": "/images/photography/wildlife/tern-soaring-1500.jpeg",
       "thumbnailPath": "/images/photography/wildlife/tern-soaring-thumbnail.jpeg",
       "caption": "An arctic tern soaring in a clear blue sky"
-    },
-    {
-      "imagePath": "/images/photography/wildlife/tern-with-eel-1500.jpeg",
-      "thumbnailPath": "/images/photography/wildlife/tern-with-eel-thumbnail.jpeg",
-      "caption": "An arctic tern with a successful catch (likely a sand eel) seen in Iceland"
     },
     {
       "imagePath": "/images/photography/wildlife/tree-sparrow-1500.jpeg",
