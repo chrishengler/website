@@ -4,18 +4,14 @@ import drawingImagesJson from "./drawing/images.json";
 import oilImagesJson from "./oil/images.json";
 import watercolourImagesJson from "./watercolour/images.json";
 import Typography from "@mui/material/Typography";
-import Gallery from "@/components/gallery";
-import getRandomElements from "@/utils/randomElements";
+import RandomGallery from "@/components/randomGallery";
 
 const drawingImages = drawingImagesJson.images;
 const oilImages = oilImagesJson.images;
 const watercolourImages = watercolourImagesJson.images;
 
 export default function Page() {
-  const images = getRandomElements(
-    drawingImages.concat(oilImages).concat(watercolourImages),
-    6,
-  );
+  const allImages = drawingImages.concat(oilImages).concat(watercolourImages);
 
   return (
     <>
@@ -43,7 +39,12 @@ export default function Page() {
         <Link href="/photographer">my photography section</Link>
         {` you may find the images some of these pieces are based on.`}
       </Typography>
-      <Gallery images={images} width={1500} height={1000} />
+      <RandomGallery
+        allImages={allImages}
+        count={6}
+        width={1500}
+        height={1000}
+      />
     </>
   );
 }

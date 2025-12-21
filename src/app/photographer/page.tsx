@@ -2,18 +2,16 @@ import { Typography } from "@mui/material";
 import architectureImagesJson from "./architecture/images.json";
 import landscapeImagesJson from "./landscape/images.json";
 import wildlifeImagesJson from "./wildlife/images.json";
-import Gallery from "@/components/gallery";
-import getRandomElements from "@/utils/randomElements";
+import RandomGallery from "@/components/randomGallery";
 
 const architectureImages = architectureImagesJson.images;
 const landscapeImages = landscapeImagesJson.images;
 const wildlifeImages = wildlifeImagesJson.images;
 
 function Page() {
-  const images = (getRandomElements(architectureImages, 2) ?? [])
-    .concat(getRandomElements(landscapeImages, 2) ?? [])
-    .concat(getRandomElements(wildlifeImages, 2) ?? []);
-  images.sort(() => 0.5 - Math.random());
+  const allImages = architectureImages
+    .concat(landscapeImages)
+    .concat(wildlifeImages);
   return (
     <>
       <Typography>
@@ -38,7 +36,12 @@ function Page() {
                 examples can be seen by navigating through to the pages for each 
                 category.`}
       </Typography>
-      <Gallery images={images} width={1500} height={1000} />
+      <RandomGallery
+        allImages={allImages}
+        count={6}
+        width={1500}
+        height={1000}
+      />
     </>
   );
 }
