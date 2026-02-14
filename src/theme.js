@@ -16,8 +16,8 @@ const theme = createTheme({
             secondary: '#444',
         },
         background: {
-            default: '#eee',
-            paper: '#fff',
+            default: '#dcdcdc',
+            paper: '#ededed',
         },
     },
     typography: {
