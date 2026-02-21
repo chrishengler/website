@@ -22,9 +22,11 @@ function Page() {
         I also have some familiarity with the following:
       </Typography>
       <List sx={{ pl: 4 }}>
-        <ListItem>C# (intermediate)</ListItem>
-        <ListItem>JavaScript (basic)</ListItem>
-        <ListItem>TypeScript (basic)</ListItem>
+        <ListItem>C</ListItem>
+        <ListItem>C#</ListItem>
+        <ListItem>JavaScript</ListItem>
+        <ListItem>TypeScript</ListItem>
+        <ListItem>Rust</ListItem>
       </List>
       <Typography variant="h4" sx={{ pt: 2 }}>
         Frameworks and Tools

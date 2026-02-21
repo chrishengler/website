@@ -5,6 +5,7 @@ const links = [
   { title: "motivation", url: "/developer/motivation" },
   { title: "skills", url: "/developer/skills" },
   { title: "cv", url: "/developer/cv" },
+  { title: "personal projects", url: "/developer/personal" },
 ];
 
 export default function DeveloperLayout({
