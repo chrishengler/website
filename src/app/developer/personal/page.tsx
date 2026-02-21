@@ -47,7 +47,7 @@ function Page() {
 
       <Project
         name="TerrainGen"
-        link="https://github.com/chrishegler/greenideas"
+        link="https://github.com/chrishengler/terraingen"
         language="C++/Rust"
         description="TerrainGen is a terrain generation tool. It allows for heightmaps to be generated using a combination of layers,
                     each of which can be generated and weighted separately. Currently it implements Perlin noise and the diamond-square algorithm
