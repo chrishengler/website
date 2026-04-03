@@ -13,7 +13,8 @@ function Page() {
 
       <Project
         name="Twaddle"
-        link="https://github.com/chrishengler/twaddle"
+        link="/developer/personal/twaddle"
+        github="https://github.com/chrishengler/twaddle"
         language="Python"
         description="Twaddle is a text-templating tool. In its simplest use case it replaces placeholders
                     with text from user-provided dictionaries, turning input like 'this is my <noun>' into something like 'this is my apple' 
@@ -23,7 +24,8 @@ function Page() {
 
       <Project
         name="Green Ideas"
-        link="https://github.com/chrishengler/greenideas"
+        link="/developer/personal/greenideas"
+        github="https://github.com/chrishengler/greenideas"
         language="Python"
         description="Green Ideas is a random sentence generator based on generative grammar principles. It allows rules to be
                     defined which are applied recursively to transform a root node (representing an abstract utterance, which may be e.g. 
@@ -47,7 +49,7 @@ function Page() {
 
       <Project
         name="TerrainGen"
-        link="https://github.com/chrishengler/terraingen"
+        github="https://github.com/chrishengler/terraingen"
         language="C++/Rust"
         description="TerrainGen is a terrain generation tool. It allows for heightmaps to be generated using a combination of layers,
                     each of which can be generated and weighted separately. Currently it implements Perlin noise and the diamond-square algorithm
