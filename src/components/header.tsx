@@ -14,6 +14,7 @@ const navItems = [
   { title: "artist", url: "/artist" },
   { title: "developer", url: "/developer" },
   { title: "photographer", url: "/photographer" },
+  { title: "blog", url: "/blog" },
   { title: "elsewhere", url: "/elsewhere" },
 ];
 

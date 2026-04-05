@@ -6,6 +6,7 @@ interface ProjectProps {
   name: string;
   language: string;
   link?: string;
+  github?: string;
   description: string;
 }
 
@@ -13,6 +14,7 @@ const Project: React.FC<ProjectProps> = ({
   name,
   language,
   link,
+  github,
   description,
 }) => {
   const title = (
@@ -38,7 +40,12 @@ const Project: React.FC<ProjectProps> = ({
           {description}
         </Typography>
         {link && (
-          <Link key={name} href={link}>
+          <Link href={link}>
+            <Typography variant="body2">More info</Typography>
+          </Link>
+        )}
+        {github && (
+          <Link key={name} href={github}>
             <Typography variant="body2">View on GitHub</Typography>
           </Link>
         )}

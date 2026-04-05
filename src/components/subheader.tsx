@@ -22,7 +22,10 @@ export const Subheader: React.FC<{
   const isMobileOrTablet = useMediaQuery(theme.breakpoints.down("md"));
 
   // Find the currently selected link
-  const selectedLink = links.find((link) => pathname === link.url) || links[0];
+  const selectedLink =
+    links
+      .filter((link) => pathname.startsWith(link.url))
+      .sort((a, b) => b.url.length - a.url.length)[0] || links[0];
 
   return (
     <>

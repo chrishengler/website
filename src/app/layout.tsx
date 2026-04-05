@@ -2,7 +2,7 @@ import theme from "../theme";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 
 import type { Metadata } from "next";
-import { Didact_Gothic, Urbanist } from "next/font/google";
+import { Didact_Gothic, Lekton, Urbanist } from "next/font/google";
 import "./globals.css";
 import CssBaseline from "@mui/material/CssBaseline";
 import { Box, ThemeProvider } from "@mui/material";
@@ -13,6 +13,13 @@ const urbanist = Urbanist({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-urbanist",
+});
+
+const lekton = Lekton({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-lekton",
 });
 
 const didactGothic = Didact_Gothic({
@@ -34,7 +41,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${urbanist.variable} ${didactGothic.variable}`}>
+      <body
+        className={`${urbanist.variable} ${didactGothic.variable} ${lekton.variable}`}
+      >
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
             <CssBaseline />

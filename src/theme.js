@@ -5,7 +5,7 @@ const theme = createTheme({
     palette: {
         primary: {
             main: '#0f0f8a',
-            contrastText: '#dcdcdc',
+            contrastText: '#e8e4df',
         },
         secondary: {
             main: '#629f51',
@@ -16,7 +16,7 @@ const theme = createTheme({
             secondary: '#444',
         },
         background: {
-            default: '#dcdcdc',
+            default: '#e8e4df',
             paper: '#ededed',
         },
     },
@@ -31,6 +31,24 @@ const theme = createTheme({
     },
     cssVariables: true,
     components: {
+        MuiCard: {
+            styleOverrides: {
+                root: {
+                    position: 'relative',
+                    borderRadius: '20px',
+                    paddingLeft: '20px',
+                    '&::before': {
+                        content: '""',
+                        position: 'absolute',
+                        left: 0,
+                        top: 0,
+                        bottom: 0,
+                        width: '20px',
+                        backgroundColor: '#0f0f8a',
+                    },
+                }
+            }
+        },
         MuiLink: {
             styleOverrides: {
                 root: {
