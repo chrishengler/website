@@ -27,17 +27,10 @@ function Page() {
         link="/developer/personal/greenideas"
         github="https://github.com/chrishengler/greenideas"
         language="Python"
-        description="Green Ideas is a random sentence generator based on generative grammar principles. It allows rules to be
-                    defined which are applied recursively to transform a root node (representing an abstract utterance, which may be e.g. 
-                    a sentence or question) into progressively more complex grammatical forms, until terminal nodes are reached and a complete
-                    sentence tree has been generated. This tree is converted into a template which is then run through Twaddle to produce 
-                    a randomly-generated but grammatically valid sentence. The package contains a set of rules and Twaddle dictionaries to
-                    generate highly varied English-language sentences, which may range from trivial statements such as 'A bird sits', through
-                    more interesting sentences and questions such as 'He was lending me candles' and 'Hadn't those leaves been showing you the table proudly?',
-                    to extremely complex sentences with deeply embedded elements such as 'This urn, that shows her those iguanas, that flattened actors, disastrously, rolls this rather sour cat'.  
-                    Both the provided rules and the provided Twaddle dictionaries are defined pragmatically, and do not aim to be a complete 
-                    or perfect description of all grammatically valid English sentences, but to generate a pleasingly wide variety of nonsense
-                    without being obviously ungrammatical. New rules or grammars can be defined targeting other languages."
+        description="Green Ideas is a random sentence generator built on the principles of generative grammar. 
+                    It applies recursive rewrite rules to turn a root node representing an abstract 'utterance'
+                    into progressively more complex grammatical structures.
+                     "
       />
 
       <Project
