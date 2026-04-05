@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { remark } from "remark";
-import html from "remark-html";
+import React from "react";
 import { Card, CardContent, Typography, Box, Divider } from "@mui/material";
 import { BlogPreviewProps } from "@/components/blog_preview";
+import Markdown from "./markdown";
 
 export interface BlogEntryProps {
   metadata: BlogPreviewProps;
@@ -10,15 +9,6 @@ export interface BlogEntryProps {
 }
 
 const BlogEntry: React.FC<BlogEntryProps> = ({ metadata, body }) => {
-  const [bodyHtml, setBodyHtml] = useState<string>("");
-
-  useEffect(() => {
-    remark()
-      .use(html, { sanitize: true })
-      .process(body)
-      .then((result) => setBodyHtml(String(result)));
-  }, [body]);
-
   return (
     <Card variant="outlined" sx={{ mb: 2, width: "100%" }}>
       <CardContent>
@@ -37,25 +27,7 @@ const BlogEntry: React.FC<BlogEntryProps> = ({ metadata, body }) => {
           </Box>
           <Typography variant="body1">{metadata.preview}</Typography>
           <Divider />
-          <Box
-            sx={{
-              mt: 2,
-              "& p, & ul, & ol, & blockquote, & pre": { marginBottom: "1em" },
-              "& ul, & ol": {
-                paddingLeft: "1.5em",
-                listStylePosition: "outside",
-              },
-              "& h1, & h2, & h3, & h4, & h5, & h6": {
-                marginTop: "1.5em",
-                marginBottom: "0.5em",
-              },
-              "& a": {
-                textDecoration: "underline",
-                textUnderlineOffset: "2px",
-              },
-            }}
-            dangerouslySetInnerHTML={{ __html: bodyHtml }}
-          />
+          <Markdown content={body} />
         </Box>
       </CardContent>
     </Card>

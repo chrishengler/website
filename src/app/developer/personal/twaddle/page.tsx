@@ -10,10 +10,10 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import Link from "next/link";
 import { runTwaddle } from "@/api";
 import axios from "axios";
 import { ChevronRight, Refresh } from "@mui/icons-material";
+import Markdown from "@/components/markdown";
 
 const exampleSentences = [
   "hello, <noun>!",
@@ -26,6 +26,38 @@ const exampleSentences = [
   "[copy:a]{the <adj> <noun> <verb.ed>!} [paste:a] [case:upper][paste:a]",
   "[//[aeiou]+//:double vowel sequences;[match][match]]",
 ];
+
+const content = `
+## Twaddle
+
+Twaddle is a text-templating tool. In its simplest use case it replaces
+placeholders with text from user-provided dictionaries, turning input like "this
+is my <noun>" into something like "this is my apple" or "this is my camera".
+
+On a more technical level, Twaddle is a domain-specific language for text
+manipulation.  In addition to the simple use case described above (replacing
+placeholders with text from dictionary files) it offers a wide variety of more
+advanced features including random branches, looping, basic mathematical
+operations, regexes, variables, and boolean logic. Recursive evaluation makes
+this tool surprisingly powerful
+
+### Get it
+  
+Twaddle is open source software made available under the MIT license.  You can
+access the code via the [GitHub
+repository](https://github.com/chrishengler/twaddle). Documentation is
+available on [GitHub pages](https://chrishengler.github.io/twaddle/).  
+
+Twaddle is also distributed [via PyPi](https://pypi.org/project/twaddle/) and
+can be installed via any standard Python package manager, e.g.:
+
+\`> pip install twaddle\`
+
+\`> poetry add twaddle\`
+
+\`> uv add twaddle\`
+
+`;
 
 function Page() {
   const [sentence, setSentence] = useState("");
@@ -59,25 +91,7 @@ function Page() {
   };
   return (
     <>
-      <Typography variant="h3">Twaddle</Typography>
-      <Typography variant="body1">
-        {`Twaddle is a text-templating tool. In its simplest use case it replaces placeholders with text from
-                user-provided dictionaries, turning input like \`this is my <noun>\` into something like \`this is my
-                apple\` or \`this is my camera\`.`}
-      </Typography>
-      <Typography>
-        {`On a more technical level, Twaddle is a domain-specific language for text manipulation. 
-                In addition to the simple use case described above (replacing placeholders with text from dictionary files)
-                it offers a wide variety of more advanced features including random branches, looping, basic mathematical
-                operations, regexes, variables, and boolean logic. Recursive evaluation makes this tool surprisingly powerful`}
-      </Typography>
-      <Typography>
-        See the{" "}
-        <Link href="https://chrishengler.github.io/twaddle/">
-          documentation
-        </Link>{" "}
-        for a fuller description of what Twaddle is capable of.
-      </Typography>
+      <Markdown content={content} />
       <Card variant="outlined" sx={{ width: "100%", mt: 2 }}>
         <CardContent>
           <Box>
