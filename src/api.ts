@@ -10,4 +10,4 @@ export const getBlogEntries = () => api.get("/blog/entries");
 export const getBlogEntry = (slug: string) => api.get(`/blog/entry/${slug}`);
 export const runGreenIdeas = () => api.get("/greenideas/sentence");
 export const runTwaddle = (sentence: string) =>
-  api.get(`/twaddle/run?sentence=${sentence}`);
+  api.get(`/twaddle/run`, { params: { sentence: sentence } });
