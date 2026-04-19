@@ -3,62 +3,72 @@
     {
       "imagePath": "/images/photography/landscapes/barcelona.jpeg",
       "thumbnailPath": "/images/photography/landscapes/barcelona-thumbnail.jpeg",
-      "caption": "Barcelona"
+      "caption": "Barcelona (D7100, 18-55mm @ 32mm)"
     },
     {
       "imagePath": "/images/photography/landscapes/etretat-cliffs.jpeg",
       "thumbnailPath": "/images/photography/landscapes/etretat-cliffs-thumbnail.jpeg",
-      "caption": "Etretat cliffs"
+      "caption": "Etretat cliffs (iPhone SE 2nd Gen)"
     },
     {
       "imagePath": "/images/photography/landscapes/fehmarn-sunset.jpeg",
       "thumbnailPath": "/images/photography/landscapes/fehmarn-sunset-thumbnail.jpeg",
-      "caption": "Fehmarn sunset"
+      "caption": "Fehmarn sunset (iPhone 13 Mini)"
     },
     {
       "imagePath": "/images/photography/landscapes/godafoss.jpeg",
       "thumbnailPath": "/images/photography/landscapes/godafoss-thumbnail.jpeg",
-      "caption": "Godafoss"
+      "caption": "Godafoss (iPhone 13 Mini)"
     },
     {
       "imagePath": "/images/photography/landscapes/kotlin-trees.jpeg",
       "thumbnailPath": "/images/photography/landscapes/kotlin-trees-thumbnail.jpeg",
-      "caption": "Trees on the shore at Kotlin island"
+      "caption": "Trees on the shore at Kotlin island (D7100, Nikkor @ 70mm)"
     },
     {
       "imagePath": "/images/photography/landscapes/montserrat-cablecar.jpeg",
       "thumbnailPath": "/images/photography/landscapes/montserrat-cablecar-thumbnail.jpeg",
-      "caption": "Montserrat cablecar"
+      "caption": "Montserrat cablecar (D7100, 18-55mm @ 35mm)"
     },
     {
       "imagePath": "/images/photography/landscapes/montserrat-hills.jpeg",
       "thumbnailPath": "/images/photography/landscapes/montserrat-hills-thumbnail.jpeg",
-      "caption": "Montserrat hills"
+      "caption": "Montserrat hills (D7100, 18-55mm @ 36mm)"
     },
     {
       "imagePath": "/images/photography/landscapes/paris-rooftops.jpeg",
       "thumbnailPath": "/images/photography/landscapes/paris-rooftops-thumbnail.jpeg",
-      "caption": "Paris rooftops shot from the balcony of the Pompidou Centre"
+      "caption": "Paris rooftops shot from the balcony of the Pompidou Centre (iPhone SE 2nd Gen)"
     },
     {
       "imagePath": "/images/photography/landscapes/reykholar.jpeg",
       "thumbnailPath": "/images/photography/landscapes/reykholar-thumbnail.jpeg",
-      "caption": "Near Reykholar"
+      "caption": "Near Reykholar (D7100, Nikkor @ 70mm)"
     },
     {
       "imagePath": "/images/photography/landscapes/svartifoss.jpeg",
       "thumbnailPath": "/images/photography/landscapes/svartifoss-thumbnail.jpeg",
-      "caption": "Svartifoss"
+      "caption": "Svartifoss (iPhone SE 1st Gen)"
     },
     {
       "imagePath": "/images/photography/landscapes/teriberka-hut.jpeg",
       "thumbnailPath": "/images/photography/landscapes/teriberka-hut-thumbnail.jpeg",
-      "caption": "Hut near Teriberka"
+      "caption": "Hut near Teriberka (iPhone SE 1st Gen)"
     },
     {
       "imagePath": "/images/photography/landscapes/teriberka-waterfall.jpeg",
       "thumbnailPath": "/images/photography/landscapes/teriberka-waterfall-thumbnail.jpeg",
-      "caption": "Waterfall near Teriberka"
+      "caption": "Waterfall near Teriberka (iPhone SE 1st Gen)"
+    },
+    {
+      "imagePath": "/images/photography/landscapes/snowy-wohlers.jpeg",
+      "thumbnailPath": "/images/photography/landscapes/snowy-wohlers-thumbnail.jpeg",
+      "caption": "Snowy trees in Wohlerspark, Hamburg (Nettar IIb, shot on Ilford HP5+)"
+    },
+    {
+      "imagePath": "/images/photography/landscapes/stadtpark.jpeg",
+      "thumbnailPath": "/images/photography/landscapes/stadtpark-thumbnail.jpeg",
+      "caption": "A path in Hamburg's Stadtpark on a misty morning (Nettar IIb, shot on Ilford HP5+)"
     }
   ]
 }
