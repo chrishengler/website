@@ -18,10 +18,12 @@ const theme = createTheme({
         background: {
             default: '#e8e4df',
             paper: '#ededed',
+            gallery: 'rgba(0,0,0,0.75)',
+            thumbnailStrip: 'rgba(0,0,0,1)'
         },
     },
     typography: {
-        fontFamily: 'var(--font-didact-gothic)',
+        fontFamily: 'var(--font-khula)',
         h1: { fontFamily: 'var(--font-urbanist)' },
         h2: { fontFamily: 'var(--font-urbanist)' },
         h3: { fontFamily: 'var(--font-urbanist)' },
