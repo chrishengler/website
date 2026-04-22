@@ -8,24 +8,6 @@
       "lens": "Nikkor 18-55mm"
     },
     {
-      "imagePath": "/images/photography/landscapes/etretat-cliffs.jpeg",
-      "thumbnailPath": "/images/photography/landscapes/etretat-cliffs-thumbnail.jpeg",
-      "caption": "Etretat cliffs",
-      "camera": "iPhone SE 2nd Gen"
-    },
-    {
-      "imagePath": "/images/photography/landscapes/fehmarn-sunset.jpeg",
-      "thumbnailPath": "/images/photography/landscapes/fehmarn-sunset-thumbnail.jpeg",
-      "caption": "Fehmarn sunset",
-      "camera": "iPhone 13 Mini"
-    },
-    {
-      "imagePath": "/images/photography/landscapes/godafoss.jpeg",
-      "thumbnailPath": "/images/photography/landscapes/godafoss-thumbnail.jpeg",
-      "caption": "Godafoss",
-      "camera": "iPhone 13 Mini"
-    },
-    {
       "imagePath": "/images/photography/landscapes/kotlin-trees.jpeg",
       "thumbnailPath": "/images/photography/landscapes/kotlin-trees-thumbnail.jpeg",
       "caption": "Trees on the shore at Kotlin island",
@@ -47,35 +29,11 @@
       "lens": "Nikkor 18-55mm"
     },
     {
-      "imagePath": "/images/photography/landscapes/paris-rooftops.jpeg",
-      "thumbnailPath": "/images/photography/landscapes/paris-rooftops-thumbnail.jpeg",
-      "caption": "Paris rooftops shot from the balcony of the Pompidou Centre",
-      "camera": "iPhone SE 2nd Gen"
-    },
-    {
       "imagePath": "/images/photography/landscapes/reykholar.jpeg",
       "thumbnailPath": "/images/photography/landscapes/reykholar-thumbnail.jpeg",
       "caption": "Near Reykholar",
       "camera": "Nikon D7100",
       "lens": "Nikkor 70-210mm"
-    },
-    {
-      "imagePath": "/images/photography/landscapes/svartifoss.jpeg",
-      "thumbnailPath": "/images/photography/landscapes/svartifoss-thumbnail.jpeg",
-      "caption": "Svartifoss",
-      "camera": "iPhone SE 1st Gen"
-    },
-    {
-      "imagePath": "/images/photography/landscapes/teriberka-hut.jpeg",
-      "thumbnailPath": "/images/photography/landscapes/teriberka-hut-thumbnail.jpeg",
-      "caption": "Hut near Teriberka",
-      "camera": "iPhone SE 1st Gen"
-    },
-    {
-      "imagePath": "/images/photography/landscapes/teriberka-waterfall.jpeg",
-      "thumbnailPath": "/images/photography/landscapes/teriberka-waterfall-thumbnail.jpeg",
-      "caption": "Waterfall near Teriberka",
-      "camera": "iPhone SE 1st Gen"
     },
     {
       "imagePath": "/images/photography/landscapes/snowy-wohlers.jpg",
