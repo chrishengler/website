@@ -48,6 +48,27 @@
       "caption": "A path in Hamburg's Stadtpark on a misty morning",
       "camera": "Zeiss Ikon Nettar IIb",
       "film": "Ilford HP5+"
+    },
+    {
+      "imagePath": "/images/photography/landscapes/abramtsevo-lake.jpg",
+      "thumbnailPath": "/images/photography/landscapes/abramtsevo-lake-thumbnail.jpg",
+      "caption": "Trees on the edge of the lake near Abramtsevo",
+      "camera": "Nikon D7100",
+      "lens": "Nikkor 18-55mm"
+    },
+    {
+      "imagePath": "/images/photography/landscapes/glacier-lagoon.jpg",
+      "thumbnailPath": "/images/photography/landscapes/glacier-lagoon-thumbnail.jpg",
+      "caption": "Ice in Jökulsárlón, Iceland",
+      "camera": "Nikon D7100",
+      "lens": "Nikkor 18-55mm"
+    },
+    {
+      "imagePath": "/images/photography/landscapes/teriberka-fishing.jpg",
+      "thumbnailPath": "/images/photography/landscapes/teriberka-fishing-thumbnail.jpg",
+      "caption": "Fisherman at Teriberka,",
+      "camera": "Nikon D7100",
+      "lens": "Nikkor 18-55mm"
     }
   ]
 }

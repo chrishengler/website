@@ -1,9 +1,9 @@
 {
   "images": [
     {
-      "imagePath": "/images/photography/wildlife/bank-swallow.jpeg",
-      "thumbnailPath": "/images/photography/wildlife/bank-swallow-thumbnail.jpeg",
-      "caption": "A bank swallow resting on a branch at Wedeler Marsch near Hamburg",
+      "imagePath": "/images/photography/wildlife/barn-swallow.jpeg",
+      "thumbnailPath": "/images/photography/wildlife/barn-swallow-thumbnail.jpeg",
+      "caption": "A barn swallow resting on a branch at Wedeler Marsch near Hamburg",
       "camera": "Nikon D7100",
       "lens": "Beroflex 500mm f/8"
     },
@@ -99,6 +99,13 @@
       "camera": "Praktica MTL5B",
       "lens": "Beroflex 500mm f/8",
       "film": "Kodak Tri-X 400"
+    },
+    {
+      "imagePath": "/images/photography/wildlife/dunlin.jpeg",
+      "thumbnailPath": "/images/photography/wildlife/dunlin-thumbnail.jpeg",
+      "caption": "A Dunlin on the coast of Kotlin Island, near St. Petersburg",
+      "camera": "Nikon D7100",
+      "lens": "Nikkor 70-210mm"
     }
   ]
 }
