@@ -2,7 +2,7 @@ import theme from "../theme";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 
 import type { Metadata } from "next";
-import { Didact_Gothic, Lekton, Urbanist } from "next/font/google";
+import { Khula, Inconsolata, Urbanist } from "next/font/google";
 import "./globals.css";
 import CssBaseline from "@mui/material/CssBaseline";
 import { Box, ThemeProvider } from "@mui/material";
@@ -15,18 +15,18 @@ const urbanist = Urbanist({
   variable: "--font-urbanist",
 });
 
-const lekton = Lekton({
+const inconsolata = Inconsolata({
   weight: ["400", "700"],
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-lekton",
+  variable: "--font-inconsolata",
 });
 
-const didactGothic = Didact_Gothic({
+const khula = Khula({
   weight: ["400"],
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-didact-gothic",
+  variable: "--font-khula",
 });
 
 export const metadata: Metadata = {
@@ -42,7 +42,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${urbanist.variable} ${didactGothic.variable} ${lekton.variable}`}
+        className={`${urbanist.variable} ${khula.variable} ${inconsolata.variable}`}
       >
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>

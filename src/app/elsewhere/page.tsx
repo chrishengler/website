@@ -99,6 +99,20 @@ export default function Page() {
             My eBird profile
           </Link>
         </ListItem>
+        <ListItem>
+          <ListItemIcon>
+            <Image
+              src="/icons/lomo.png"
+              alt="Lomography"
+              height={24}
+              width={24}
+              style={{ width: 24, height: 24 }}
+            />
+          </ListItemIcon>
+          <Link href="https://lomography.com/homes/chrishengler">
+            My Lomography home
+          </Link>
+        </ListItem>
       </List>
     </>
   );

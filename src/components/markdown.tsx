@@ -1,3 +1,4 @@
+"use client";
 import { Box } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { remark } from "remark";
@@ -33,6 +34,22 @@ const Markdown: React.FC<MarkdownProps> = ({ content }) => {
         "& a": {
           textDecoration: "underline",
           textUnderlineOffset: "2px",
+        },
+        "& code": {
+          fontSize: "inherit",
+          backgroundColor: "rgba(0, 0, 0, 0.08)",
+          padding: "0.15em 0.4em",
+          borderRadius: "4px",
+        },
+        "& pre": {
+          backgroundColor: "rgba(0, 0, 0, 0.08)",
+          padding: "1em",
+          borderRadius: "4px",
+          overflowX: "auto",
+          "& code": {
+            backgroundColor: "transparent",
+            padding: 0,
+          },
         },
       }}
       dangerouslySetInnerHTML={{ __html: bodyHtml }}
