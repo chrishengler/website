@@ -47,6 +47,7 @@ const Gallery: React.FC<GalleryProps> = ({ images, width, height }) => {
   const thumbHeight = isMobile ? 40 : 100;
   const buttonFontSize = isMobile ? "small" : "large";
   const borderColour = theme.palette.background.default;
+  const stripColour = theme.palette.background.thumbnailStrip;
 
   const scrollRef = React.useRef<HTMLDivElement>(null);
   const [canScrollLeft, setCanScrollLeft] = React.useState(false);
@@ -69,7 +70,16 @@ const Gallery: React.FC<GalleryProps> = ({ images, width, height }) => {
     };
   }, [images.length]);
 
-  const stripColour = theme.palette.background.thumbnailStrip;
+  React.useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+    const child = el.children[selectedIdx] as HTMLElement | undefined;
+    child?.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+      inline: "nearest",
+    });
+  }, [selectedIdx]);
 
   return (
     <Box sx={{ p: 2, bgcolor: "background.gallery", borderRadius: 4 }}>
