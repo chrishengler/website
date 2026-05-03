@@ -9,3 +9,5 @@ export const getBlogEntry = (slug: string) => api.get(`/blog/entry/${slug}`);
 export const runGreenIdeas = () => api.get("/greenideas/sentence");
 export const runTwaddle = (sentence: string) =>
   api.get(`/twaddle/run`, { params: { sentence: sentence } });
+export const getTwaddleDictionaries = () => api.get("/twaddle/dictionaries");
+export const getTwaddleFunctions = () => api.get("/twaddle/functions");
