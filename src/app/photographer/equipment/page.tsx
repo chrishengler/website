@@ -67,7 +67,7 @@ function Page() {
         use with my Praktica. I think this is actually an M39 mount with some
         sort of home-made M42 adaptor ring very firmly attached."
       />
-      <Typography variant="h3">Accessories</Typography>
+      <Typography variant="h4">Accessories</Typography>
       <EquipmentAccordion
         name="Zeiss Ikon Ikophot"
         description="This is a selenium light-meter from the 1950s. It's a

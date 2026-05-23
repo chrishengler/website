@@ -2,22 +2,32 @@
 
 import { useEffect, useState } from "react";
 import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
   Box,
   Button,
   Card,
   CardContent,
   InputAdornment,
+  List,
   TextField,
   Typography,
 } from "@mui/material";
-import { runTwaddle } from "@/api";
+import { getTwaddleDictionaries, getTwaddleFunctions, runTwaddle } from "@/api";
 import axios from "axios";
 import { ChevronRight, Refresh } from "@mui/icons-material";
 import Markdown from "@/components/markdown";
+import TwaddleDictionary, {
+  TwaddleDictionaryProps,
+} from "@/components/twaddle_dictionary";
+import TwaddleFunction, {
+  TwaddleFunctionProps,
+} from "@/components/twaddle_function";
 
 const exampleSentences = [
   "hello, <noun>!",
-  "[case:title]\a <adj> <noun> <verb.ed>",
+  "[case:title]\\a <adj> <noun> <verb.ed>",
   "You should {always|never} <verb> <adv>!",
   "[//\\ss//:a silly snake was in the sand; sss]",
   "[hide]{[copy:num]{[rand:3;6]}}Now I'll say '<noun::=n>' [paste:num] times: [rep:[paste:num]][sep:\\s]{<noun::=n>!}",
@@ -32,7 +42,7 @@ const content = `
 
 Twaddle is a text-templating tool. In its simplest use case it replaces
 placeholders with text from user-provided dictionaries, turning input like "this
-is my <noun>" into something like "this is my apple" or "this is my camera".
+is my \\<noun\\>" into something like "this is my apple" or "this is my camera".
 
 On a more technical level, Twaddle is a domain-specific language for text
 manipulation.  In addition to the simple use case described above (replacing
@@ -59,9 +69,43 @@ can be installed via any standard Python package manager, e.g.:
 
 `;
 
+const documentationInfo = `Full Twaddle documentation is available [on GitHub
+pages](https://chrishengler.github.io/twaddle/). Below you can find basic
+guidance on the dictionaries and functions currently available. `;
+
 function Page() {
   const [sentence, setSentence] = useState("");
   const [result, setResult] = useState("");
+
+  const [dictionaries, setDictionaries] = useState<TwaddleDictionaryProps[]>(
+    [],
+  );
+  useEffect(() => {
+    const fetchDictionaries = async () => {
+      try {
+        const response = await getTwaddleDictionaries();
+        setDictionaries(response.data["dictionaries"]);
+      } catch (error) {
+        console.error("Error fetching dictionaries: ", error);
+      }
+    };
+
+    fetchDictionaries();
+  }, []);
+
+  const [functions, setFunctions] = useState<TwaddleFunctionProps[]>([]);
+  useEffect(() => {
+    const fetchFunctions = async () => {
+      try {
+        const response = await getTwaddleFunctions();
+        setFunctions(response.data["functions"]);
+      } catch (error) {
+        console.error("Error fetching functions: ", error);
+      }
+    };
+
+    fetchFunctions();
+  }, []);
 
   function replaceWithExample() {
     setSentence((prev) => {
@@ -131,6 +175,57 @@ function Page() {
                 {result}
               </Typography>
             )}
+          </Box>
+
+          <Box sx={{ pt: 2 }}>
+            <Typography variant="h5">Basic documentation</Typography>
+
+            <Markdown content={documentationInfo} />
+            <Accordion>
+              <AccordionSummary>
+                <Typography variant="h6">Dictionaries</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography variant="body1">
+                  Dictionary names, with the available forms shown on the left.
+                  Click on a dictionary to expand to a table showing an example
+                  entry in all of its forms.
+                </Typography>
+                <List dense={true}>
+                  {" "}
+                  {dictionaries.map((dictionary) => (
+                    <TwaddleDictionary
+                      key={dictionary.name}
+                      name={dictionary.name}
+                      forms={dictionary.forms}
+                      example={dictionary.example}
+                    />
+                  ))}
+                </List>{" "}
+              </AccordionDetails>{" "}
+            </Accordion>
+
+            <Accordion>
+              <AccordionSummary>
+                <Typography variant="h6">Functions</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography variant="body1">
+                  Click on a function to expand with a brief description of its
+                  arguments and effects.
+                </Typography>
+                <List dense={true}>
+                  {functions.map((func) => (
+                    <TwaddleFunction
+                      key={func.name}
+                      name={func.name}
+                      aliases={func.aliases}
+                      description={func.description}
+                    />
+                  ))}
+                </List>
+              </AccordionDetails>
+            </Accordion>
           </Box>
         </CardContent>
       </Card>

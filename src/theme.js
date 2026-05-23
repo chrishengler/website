@@ -51,6 +51,14 @@ const theme = createTheme({
                 }
             }
         },
+        MuiAccordion: {
+            styleOverrides: {
+                root: {
+                    borderLeft: '10px solid #0f0f8a',
+                    paddingLeft: '10px',
+                }
+            }
+        },
         MuiLink: {
             styleOverrides: {
                 root: {
