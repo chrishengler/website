@@ -27,7 +27,7 @@ import TwaddleFunction, {
 
 const exampleSentences = [
   "hello, <noun>!",
-  "[case:title]\a <adj> <noun> <verb.ed>",
+  "[case:title]\\a <adj> <noun> <verb.ed>",
   "You should {always|never} <verb> <adv>!",
   "[//\\ss//:a silly snake was in the sand; sss]",
   "[hide]{[copy:num]{[rand:3;6]}}Now I'll say '<noun::=n>' [paste:num] times: [rep:[paste:num]][sep:\\s]{<noun::=n>!}",
@@ -42,7 +42,7 @@ const content = `
 
 Twaddle is a text-templating tool. In its simplest use case it replaces
 placeholders with text from user-provided dictionaries, turning input like "this
-is my <noun>" into something like "this is my apple" or "this is my camera".
+is my \\<noun\\>" into something like "this is my apple" or "this is my camera".
 
 On a more technical level, Twaddle is a domain-specific language for text
 manipulation.  In addition to the simple use case described above (replacing
