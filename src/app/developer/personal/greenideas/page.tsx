@@ -5,9 +5,10 @@ import { Box, Button, Card, CardContent, Typography } from "@mui/material";
 import { runGreenIdeas } from "@/api";
 import axios from "axios";
 import Markdown from "@/components/markdown";
+import SentenceTree, { SentenceNode } from "@/components/sentence_tree";
 
 const content: string = `## Green Ideas
-  
+
   Green Ideas is a random sentence generator, based on the principles of
   generative grammar.  Rules can be defined which are applied recursively to
   transform a root node into progressively more complex forms, until terminal
@@ -32,41 +33,45 @@ const content: string = `## Green Ideas
 
   See the [documentation](https://chrishengler.github.io/greenideas/) for a
   fuller description of what Green Ideas is capable of and how it works, or try
-  generating some sentences below 
-  
+  generating some sentences below
+
   ### Get it
-  
+
   Green Ideas is open source software made available under the MIT license.  You can
   access the code via the [GitHub
   repository](https://github.com/chrishengler/greenideas).  Documentation is
-  available on [GitHub pages](https://chrishengler.github.io/greenideas/). 
+  available on [GitHub pages](https://chrishengler.github.io/greenideas/).
 
   Green Ideas is also distributed [via
   PyPi](https://pypi.org/project/greenideas/) and can be installed via any
   standard Python package manager, e.g.:
-  
+
   \`> pip install greenideas\`
-  
+
   \`> poetry add greenideas\`
 
   \`> uv add greenideas\`
-  
+
   `;
 
 function Page() {
-  const [result, setResult] = useState("");
+  const [result, setResult] = useState<SentenceNode | null>(null);
+  const [error, setError] = useState<string>("");
 
   const handleRun = async () => {
+    setError("");
+    setResult(null);
     try {
       const response = await runGreenIdeas();
       setResult(response.data);
-    } catch (error) {
-      const detail = axios.isAxiosError(error)
-        ? error.response?.data?.detail
-        : (error as Error).message;
-      setResult(`ERROR: ${detail}`);
+    } catch (e) {
+      const detail = axios.isAxiosError(e)
+        ? e.response?.data?.detail
+        : (e as Error).message;
+      setError(`ERROR: ${detail}`);
     }
   };
+
   return (
     <>
       <Markdown content={content} />
@@ -78,10 +83,18 @@ function Page() {
               Generate a sentence
             </Button>
           </Box>
-          {result && (
+          {error && (
             <Typography sx={{ mt: 2, whiteSpace: "pre-wrap" }}>
-              {result}
+              {error}
             </Typography>
+          )}
+          {result && (
+            <Box sx={{ mt: 2 }}>
+              <Typography variant="h6">{result.value}</Typography>
+              <Box sx={{ mt: 2, overflowX: "auto" }}>
+                <SentenceTree node={result} defaultExpanded />
+              </Box>
+            </Box>
           )}
         </CardContent>
       </Card>
