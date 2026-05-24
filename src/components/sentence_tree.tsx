@@ -14,60 +14,118 @@ interface SentenceTreeProps {
   defaultExpanded?: boolean;
 }
 
+const CONNECTOR_HEIGHT = 20;
+
 function SentenceTree({ node, defaultExpanded = false }: SentenceTreeProps) {
   const [expanded, setExpanded] = useState(defaultExpanded);
 
-  if (!expanded) {
+  if (!expanded && node.children.length > 0) {
     return (
-      <Chip
-        label={node.POS}
-        onClick={() => setExpanded(true)}
-        variant="outlined"
-        clickable
-      />
+      <Box
+        sx={{
+          display: "inline-flex",
+          flexDirection: "column",
+          alignItems: "center",
+          gap: 0.5,
+          px: 1,
+        }}
+      >
+        <Typography
+          variant="body1"
+          sx={{
+            fontStyle: "italic",
+            textAlign: "center",
+            whiteSpace: "nowrap",
+          }}
+        >
+          {node.value}
+        </Typography>
+        <Chip
+          label={node.POS}
+          onClick={() => setExpanded(true)}
+          variant="outlined"
+          clickable
+        />
+      </Box>
     );
   }
 
   return (
     <Box
       sx={{
-        border: 1,
-        borderColor: "divider",
-        borderRadius: 1,
-        p: 1,
         display: "inline-flex",
         flexDirection: "column",
         alignItems: "center",
         gap: 0.5,
-        minWidth: 0,
+        px: 1,
       }}
     >
-      <Chip
-        label={node.POS}
-        onClick={() => setExpanded(false)}
-        variant="filled"
-        color="primary"
-        clickable
-      />
       <Typography
-        variant="body2"
-        sx={{ fontStyle: "italic", textAlign: "center" }}
+        variant="body1"
+        sx={{
+          fontStyle: "italic",
+          textAlign: "center",
+          whiteSpace: "nowrap",
+        }}
       >
         {node.value}
       </Typography>
+      <Chip
+        label={node.POS}
+        onClick={
+          node.children.length > 0 ? () => setExpanded(false) : undefined
+        }
+        variant="filled"
+        color="primary"
+        clickable={node.children.length > 0}
+      />
       {node.children.length > 0 && (
         <Box
           sx={{
             display: "flex",
-            flexWrap: "wrap",
-            gap: 1,
-            justifyContent: "center",
+            flexWrap: "nowrap",
             alignItems: "flex-start",
-            mt: 0.5,
+            "& > .gi-child": {
+              position: "relative",
+              pt: `${CONNECTOR_HEIGHT}px`,
+              px: 1,
+              "&::before": {
+                content: '""',
+                position: "absolute",
+                top: 0,
+                right: "50%",
+                width: "50%",
+                height: `${CONNECTOR_HEIGHT}px`,
+                borderTop: "2px solid",
+                borderRight: "2px solid",
+                borderColor: "divider",
+              },
+              "&::after": {
+                content: '""',
+                position: "absolute",
+                top: 0,
+                left: "50%",
+                width: "50%",
+                height: `${CONNECTOR_HEIGHT}px`,
+                borderTop: "2px solid",
+                borderColor: "divider",
+              },
+              "&:first-of-type::before": {
+                borderTop: "none",
+              },
+              "&:last-of-type::after": {
+                borderTop: "none",
+              },
+              "&:only-child::before": {
+                borderTop: "none",
+              },
+            },
           }}
         >
           {node.children.map((child, idx) => (
-            <SentenceTree key={idx} node={child} />
+            <Box key={idx} className="gi-child">
+              <SentenceTree node={child} />
+            </Box>
           ))}
         </Box>
       )}
